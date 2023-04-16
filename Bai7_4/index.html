@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ứng dụng chuyển đổi tiền tệ</title>
+  </head>
+
+  <body>
+    <!--Ứng dụng chuyển đổi tiền tệ cho phép tính giá trị tiền tệ giữa các đồng tiền khác nhau dựa vào một tỉ giá cho trước.-->
+
+    <table>
+      <tr>
+        <th>Amount</th>
+        <th>From Currency</th>
+        <th>To Curency</th>
+      </tr>
+      <tr>
+        <td>
+          <input type="text" id="Amount"size="30" />
+          <label for="Amount">Amount</label>
+           
+        </td>
+        <td>
+          <select id ="From">
+            <option value="VND">VND</option>
+            <option value="US">US</option>
+          </select>
+        </td>
+        <td>
+          <select id="To">
+            <option value="US">US</option>
+            <option value="VND">VND</option>
+          </select>
+        </td>
+        <td>
+          <button onclick="ChangeMoney()">Convert</button>
+        </td>
+
+         </tr>
+    </table>
+    <br />
+    <p id="Result"></p>
+
+    <script src="index.js"></script>
+  </body>
+</html>
